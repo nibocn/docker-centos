@@ -1,5 +1,8 @@
 FROM centos:7
-MAINTAINER Richard<nibocn@gmail.com>
+MAINTAINER Richard <nibocn@gmail.com>
+
+ENV LANG=en_US.UTF-8 \
+    LC_ALL=en_US.UTF-8
 
 RUN yum makecache fast \
     && yum install -y git \
